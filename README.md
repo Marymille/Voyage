@@ -4,18 +4,13 @@ Bienvenue sur Mon Voyage, un projet web interactif combinant carte dynamique et 
 "Explorez, cliquez, découvrez, admirez."
 
 📚 Table des matières
+
 🚀 Aperçu du projet
-
 📂 Structure du projet
-
 ⚙️ Technologies utilisées
-
 📜 Scripts utilisés
-
 🛠️ Installation locale
-
 📌 Fonctionnalités à venir
-
 ✨ Auteur
 
 🚀 Aperçu du projet
@@ -140,5 +135,4 @@ Leaflet Documentation
 Bootstrap Documentation
 
 Lightbox2 Documentation
-
 

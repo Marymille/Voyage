@@ -1,0 +1,227 @@
+/* ===================== */
+/* Style général */
+/* ===================== */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f4f4f4; /* Fond clair */
+  margin: 0;
+  padding: 0;
+  color: hsl(0, 0%, 20%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Bloc principal */
+#bloc_page {
+  flex: 1;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 80px 20px 20px; /* Ajuster le padding pour que le contenu ne soit pas sous la navbar */
+}
+
+/* ===================== */
+/* Navbar */
+/* ===================== */
+.navbar {
+  background: linear-gradient(90deg, #ff8a8a, #ffaf7b) !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.navbar a {
+  color: white !important;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.navbar .nav-link.active {
+  text-decoration: underline;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+/* ===================== */
+/* Titre principal */
+/* ===================== */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* ===================== */
+/* Texte principal */
+/* ===================== */
+.text-align {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+/* ===================== */
+/* Footer (rose) */
+/* ===================== */
+footer {
+  background: linear-gradient(90deg, #ff8a8a, #ffaf7b) !important;
+  padding: 40px 0;
+  color: rgb(129, 77, 189);
+  width: 100%;
+  margin-top: 50px;
+}
+
+footer h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer a {
+  color: rgb(206, 63, 175);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-bottom {
+  padding-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* ===================== */
+/* Footer en 3 colonnes, responsive */
+/* ===================== */
+@media (min-width: 768px) {
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  footer .col-md-4 {
+    flex: 1;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .container {
+    display: block;
+    text-align: center;
+  }
+
+  footer .col-md-4 {
+    margin-bottom: 30px;
+  }
+}
+
+/* ===================== */
+/* Galerie (container des cartes) */
+/* ===================== */
+#galerie {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(23%, 1fr)); /* Chaque carte prend 23% de la largeur */
+  width: 100%;
+}
+
+.card-custom {
+  width: 23%; /* Chaque carte prend 23% de la largeur */
+  min-width: 250px;
+  margin: 10px; /* Ajouter un peu d'espace entre les cartes */
+}
+
+/* ===================== */
+/* Modal */
+/* ===================== */
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px; /* Espacer du haut pour éviter la navbar */
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%; /* Augmenter la largeur du modal */
+  max-height: 90%;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Pour la taille des images dans le modal */
+#modalImg {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+#modalDesc {
+  padding-left: 20px;
+  padding-top: 15px;
+  font-size: 1rem;
+  max-width: 100%;
+  overflow-y: auto;
+}
+
+/* Fermeture du modal */
+#closeModal {
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: black; /* Couleur de l'icône */
+  background: transparent;
+  border: none;
+  z-index: 1051; /* Assurer que le bouton est au-dessus du modal */
+}
+
+/* ===================== */
+/* Style pour les cartes dans la galerie */
+/* ===================== */
+.card {
+  width: 100%; /* S'assurer que la carte prend 100% de l'espace du conteneur */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Pour que l'image remplisse le conteneur sans déformation */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Effet de zoom au survol */
+}

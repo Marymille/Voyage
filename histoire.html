@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Important pour responsive -->
+  <title>Histoire - Mon Voyage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">📜 Histoire</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="histoire.html">Histoire</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="transport.html">Transport</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carte.html">Carte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galerie.html">Galerie</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main class="container">
+
+    <h1 class="title mb-4">Quelques cartes anciennes de la Corée du Sud</h1>
+    <h2 class="text-2xl font-bold mb-5">Un peu d'histoire sur l'évolution de la péninsule coréenne</h2>
+
+    <div class="border-start ps-4 mb-5">
+      <!-- Silla -->
+      <section class="mb-4">
+        <h3 class="text-lg fw-bold mb-1">🏯 Royaume de Silla (57 av. J.-C. – 935 apr. J.-C.)</h3>
+        <p>Unification de la majeure partie de la Corée au VIIᵉ siècle.</p>
+      </section>
+
+      <!-- Goryeo -->
+      <section class="mb-4">
+        <h3 class="text-lg fw-bold mb-1">🏰 Royaume de Goryeo (918–1392)</h3>
+        <p>Son nom est à l'origine du terme "Corée" utilisé en Occident.</p>
+      </section>
+
+      <!-- Joseon -->
+      <section class="mb-4">
+        <h3 class="text-lg fw-bold mb-1">🎎 Dynastie Joseon (1392–1897)</h3>
+        <p>
+          Rayonnement de l'identité culturelle, politique et sociale. Le confucianisme devient
+          le fondement de l'État, en développant une culture nationale distincte.
+        </p>
+      </section>
+
+      <!-- Empire de Corée -->
+      <section class="mb-4">
+        <h3 class="text-lg fw-bold mb-1">👑 Empire de Corée (1897–1910)</h3>
+        <p>Tentative de modernisation et d'affirmation de l'indépendance.</p>
+      </section>
+
+      <!-- Annexion japonaise -->
+      <section class="mb-4">
+        <h3 class="text-lg fw-bold mb-1">⚔️ Annexion par le Japon (1910-1945)</h3>
+        <p>Période de colonisation par l'Empire du Japon.</p>
+      </section>
+
+      <!-- Division après 1945 -->
+      <section class="mb-5">
+        <h3 class="text-lg fw-bold mb-1">🧭 Division et création des deux Corées (1945-1953)</h3>
+        <p>
+          Division de la péninsule en deux zones, soviétique au nord et américaine au sud,
+          menant à la création de la Corée du Nord et de la Corée du Sud.
+        </p>
+      </section>
+    </div>
+
+    <title>Galerie de Cartes Anciennes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Galerie -->
+    <h1 class="mb-4">Galerie de Cartes Anciennes de Corée</h1>
+    <!-- Conteneur des images -->
+<div id="galerie" class="gallery">
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content p-3">
+              <span id="closeModal" style="cursor:pointer; font-size:1.5rem; align-self: flex-end;">&times;</span>
+              <img id="modalImg" src="" alt="Image agrandie" class="img-fluid mb-3">
+              <div id="modalDesc"></div>
+          </div>
+      </div>
+  </div>
+    <!-- Lien vers le script externe -->
+    <script src="script2.js"></script>
+
+  </main>
+
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="footer bg-light mt-5 py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>Plan du site</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="histoire.html">Histoire</a></li>
+            <li><a href="transport.html">Transport</a></li>
+            <li><a href="carte.html">Carte</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Licence</h5>
+          <p>© 2025 Mon Voyage.<br>Tous droits réservés.<br>Contenu sous licence personnelle.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Contact</h5>
+          <p>Envie d'échanger ?<br><a href="mailto:contact@monvoyage.com">contact@monvoyage.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom pt-3">
+        <p>Site réalisé avec ❤️ par Marymille</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

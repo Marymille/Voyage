@@ -5,7 +5,7 @@ Bienvenue sur **Mon Voyage**, un projet web interactif combinant carte dynamique
 _"Explorez, cliquez, découvrez, admirez."_
 
 ---
-
+ATTENTION: Les images sont trop lourdes, je n'ai pas pu les charger, en attente d'une solution.
 ## 📚 Table des matières
 
 - [🚀 Aperçu du projet](#-aperçu-du-projet)
@@ -26,6 +26,7 @@ _"Explorez, cliquez, découvrez, admirez."_
 - **Lightbox** pour visionner les images en grand et naviguer avec des flèches.
 - **Responsive** (adapté mobiles et tablettes).
 - **Navigation fluide** entre carte et galerie.
+
 
 ---
 
